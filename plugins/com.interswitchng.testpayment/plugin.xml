@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.interswitchng.testpayment" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cordova-payment-plugin-2</name>
+ 	<preference name="CLIENT_ID" default=""/>
+    <preference name="CLIENT_SECRET" default=""/>
+    <js-module name="cordova-payment-plugin-2" src="www/cordova-payment-plugin-2.js">
+        <clobbers target="PaymentPlugin" />
+    </js-module>
+
+    <platform name='ios'>
+        <config-file target='config.xml' parent='/*'>
+            <feature name='PaymentPlugin'>
+                <param name='ios-package' value='PaymentPlugin'/>
+            </feature>
+        </config-file>
+        <source-file src='src/ios/PaymentPlugin.swift'/>
+        <source-file src='src/ios/PayWithUI.swift'/>
+        <source-file src='src/ios/Utils.swift'/>
+
+        <framework src="src/ios/Frameworks/PaymentSDK.framework" custom="true"/>
+    </platform>
+    <dependency id="cordova-plugin-add-swift-support" url="https://github.com/akofman/cordova-plugin-add-swift-support"/>
+</plugin>

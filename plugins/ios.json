@@ -1,0 +1,24 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.interswitch.payment"
+        },
+        "com.interswitchng.testpayment": {
+            "CLIENT_ID": "IKIA7B379B0114CA57FAF8E19F5CC5063ED2220057EF",
+            "CLIENT_SECRET": "MiunSQ5S/N219UCVP1Lt2raPfwK9lMoiV/PdBX5v/R4=",
+            "PACKAGE_NAME": "com.interswitch.payment"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-add-swift-support": {
+            "PACKAGE_NAME": "com.interswitch.payment"
+        }
+    }
+}

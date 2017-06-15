@@ -1,0 +1,13 @@
+# Uncomment the next line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, "8.0"
+use_frameworks!
+
+target 'ATestApp' do
+
+pod 'CryptoSwift', '0.6.9'
+pod 'Alamofire', '4.4.0'
+pod 'SwiftyJSON', '3.1.4'
+pod 'OpenSSL-Universal', '1.0.2.10'
+
+end

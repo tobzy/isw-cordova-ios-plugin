@@ -1,0 +1,49 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"PaymentPlugin\"><param name=\"ios-package\" value=\"PaymentPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.interswitch.payment"
+        },
+        "cordova-plugin-add-swift-support": {
+            "PACKAGE_NAME": "com.interswitch.payment"
+        },
+        "com.interswitchng.testpayment": {
+            "CLIENT_ID": "IKIA7B379B0114CA57FAF8E19F5CC5063ED2220057EF",
+            "CLIENT_SECRET": "MiunSQ5S/N219UCVP1Lt2raPfwK9lMoiV/PdBX5v/R4=",
+            "PACKAGE_NAME": "com.interswitch.payment"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "com.interswitchng.testpayment.cordova-payment-plugin-2",
+            "file": "plugins/com.interswitchng.testpayment/www/cordova-payment-plugin-2.js",
+            "pluginId": "com.interswitchng.testpayment",
+            "clobbers": [
+                "PaymentPlugin"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.3.2",
+        "cordova-plugin-add-swift-support": "1.6.2",
+        "com.interswitchng.testpayment": "0.0.1"
+    }
+}
